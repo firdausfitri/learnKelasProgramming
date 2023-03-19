@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+    <form action="process.php" method="post">
+
+        <p>
+            <label for="name">Student Name</label>
+            <input type="text" name="name" id="name">
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="mobile_no">Mobile No</label>
+            <input type="text" name="mobile_no" id="mobile_no">
+        </p>
+
+        <p>
+            <!-- Dropdown -->
+            <label for="status">Job Status</label>
+            <select name="status" id="status">
+                <option value="working">Working</option>
+                <option value="student">Student</option>
+                <option value="not working">Not Working</option>
+            </select>
+        </p>
+
+        <p>
+            <!-- Radio -->
+            <label for="">Gender</label>
+            <label for="men">
+                <input type="radio" name="gender" id="men" value="men">Men
+            </label>
+            <label for="women">
+                <input type="radio" name="gender" id="women" value="women">Women
+            </label>
+        </p>
+
+        <p>
+            <!-- Checkbox -->
+            <label for="">Programming Experience</label>
+            <label for="html">
+                <input type="checkbox" name="experience[]" id="html">HTML
+            </label>
+            <label for="css">
+                <input type="checkbox" name="experience[]" id="css">CSS
+            </label>
+            <label for="php">
+                <input type="checkbox" name="experience[]" id="php">PHP
+            </label>
+            <label for="js">
+                <input type="checkbox" name="experience[]" id="js">Javascript
+            </label>
+
+        </p>
+
+        <p>
+            <!-- button -->
+            <button type="submit">REGISTER</button>
+            <button type="reset">CLEAR FORM</button>
+        </p>
+
+
+    </form>
+
+
+</body>
+</html>
